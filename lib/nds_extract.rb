@@ -37,21 +37,21 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
-  collection_of_director_grosses = {}
-  directors = []
-  directors_count = 0
+  # 1. directors_totals: returns a Hash of { dir_name => gross }
+  # 2. list_of_directors: names provides an Array of directors names (use
   
-  directors = list_of_directors(source)  #names only
+  all_money = 0 
+  director_count = 0
   
-  while directors_count < directors.length do
-    name = directors[directors_count]
-    gross = gross_for_director(source[directors_count])
-    
-    collection_of_director_grosses[name] = gross
-    directors_count += 1
-  end 
+  pp "This is the list of directors: #{list_of_directors(source)}" 
+  pp "This is the gross of the movies: #{directors_totals(source)}"  
   
-  collection_of_director_grosses
+#  while director_count < list_of_directors.length do
+#    all_money += 
+#    director_count += 1 
+#  end
+  
+  all_money
 end
 
 
