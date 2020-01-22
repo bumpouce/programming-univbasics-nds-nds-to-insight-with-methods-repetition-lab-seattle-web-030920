@@ -32,6 +32,8 @@ def list_of_directors(source)
     all_directors << source[directors_count][:name]
     directors_count += 1
   end
+  
+  all_directors
 end
 
 def total_gross(source)
