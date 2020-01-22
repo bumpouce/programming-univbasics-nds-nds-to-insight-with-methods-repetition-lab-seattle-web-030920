@@ -45,7 +45,7 @@ def total_gross(source)
   
   while directors_count < directors.length do
     pp "Director is: #{directors[directors_count]}"
-    pp "Gross is in here: #{source}"
+    pp "Gross is in here: #{source[directors_count]}"
 #    collection_of_director_grosses[directors[directors_count]] = gross_for_director(source[directors][directors_count])
     directors_count += 1
   end 
