@@ -42,10 +42,9 @@ def total_gross(source)
   directors_count = 0
   
   directors = list_of_directors(source)  #names only
-  pp "First director #{directors[0]}."
   
   while directors_count < directors.length do
-    pp gross_for_director(directors[directors_count])
+    collection_of_director_grosses[directors[directors_count]] = gross_for_director()
     directors_count += 1
   end 
 end
