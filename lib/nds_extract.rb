@@ -25,7 +25,13 @@ def gross_for_director(d)
 end
 
 def list_of_directors(source)
-  # Write this implementation
+  all_directors = []
+  directors_count = 0 
+  
+  while directors_count < source.length do 
+    all_directors << source[directors_count][:name]
+    directors_count += 1
+  end
 end
 
 def total_gross(source)
