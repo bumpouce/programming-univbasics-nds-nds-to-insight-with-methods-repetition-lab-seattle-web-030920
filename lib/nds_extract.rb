@@ -46,10 +46,10 @@ def total_gross(source)
   pp "This is the list of directors: #{list_of_directors(source)}" 
   pp "This is the gross of the movies: #{directors_totals(source)}"  
   
-#  while director_count < list_of_directors.length do
-#    all_money += 
-#    director_count += 1 
-#  end
+  while director_count < list_of_directors(source).length do
+    all_money += directors_totals(source)[list_of_directors(source)[director_count]]
+    director_count += 1 
+  end
   
   all_money
 end
