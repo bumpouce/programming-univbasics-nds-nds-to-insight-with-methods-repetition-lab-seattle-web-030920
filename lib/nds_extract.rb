@@ -45,8 +45,7 @@ def total_gross(source)
   pp "There are #{directors.length} directors."
   
   while directors_count < directors.length do
-    pp "Director #{source[:name]}" 
-#    pp gross_for_director(directors[directors_count]
+    gross_for_director(directors[directors_count])
     directors_count += 1
   end 
 end
